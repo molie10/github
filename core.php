@@ -25,7 +25,7 @@ if (isset($_POST['btn_login']))
 {
     $username = $_POST['username'];
     $password = $_POST['password'];
-
+    $email = $_POST['email'];
     $sql = "SELECT * FROM user WHERE username = ? ";
     $stmt = mysqli_stmt_init($con);
 
